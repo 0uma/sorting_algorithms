@@ -9,7 +9,7 @@
  *
  * Return: void
  */
-void swap(int *array, size t size, int *a, int *b)
+void swap(int *array, size_t size, int *a, int *b)
 {
 	if (*a != *b)
 	{
@@ -30,9 +30,9 @@ void swap(int *array, size t size, int *a, int *b)
  *
  *Return: size t
  */
-size_t lomuto_partition(int *array, size t size, ssize t lo, ssize_t hi)
+size_t lomuto_partition(int *array, size_t size, ssize_t lo, ssize_t hi)
 {
-	int i, j, pivot array[hi];
+	int i, j, pivot = array[hi];
 
 	for (i = j = lo; j < hi; j++)
 		if (array[j] < pivot)
@@ -72,5 +72,5 @@ void quick_sort(int *array, size_t size)
 {
 	if (!array || !size)
 		return;
-	quicksort(array, size, o size - 1);
+	quicksort(array, size, 0, size - 1);
 }
